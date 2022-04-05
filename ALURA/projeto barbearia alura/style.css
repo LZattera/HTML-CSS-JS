@@ -1,4 +1,3 @@
-/*ARRUMAR ESSA PAGINA COMO A PAGINA DO PRODUTO*/
 header{
     background-color: #bbbbbb;
     padding: 20px 0;
@@ -34,57 +33,53 @@ nav a:hover{
     text-decoration: underline;
 }
 
-#banner{
-    width: 100%;
-}
-
-.principal{
-    background-color: #cccccc;
-    padding: 30px;
+.produtos{
+    width: 940px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.tituloprincipal{
-    padding-left: 30px;
-}
-
-.titulocentralizado{
+.produtos li{
+    display: inline-block;
     text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    /* OU border: 2px solid #000000 */
+    border-radius: 10pX;
 }
 
-p{
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.produtos li:hover{
+    border-color: #c78c19;
 }
 
-#missao{
-    font-size: 20px;
+.produtos li:active{
+    border-color: #088019;
 }
 
-h1{
-    font-size: 100px;
-    color: blueviolet;
+/*quando o mouse estiver por cima dos elementos do li quero alterar o elemento H2*/
+.produtos li:hover h2{
+    font-size: 34px;
 }
 
-em strong{
-    color: blue;
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
 }
 
-.itens{
-    font-style: italic;
+.produto-texto{
+    font-size: 18px;    
 }
 
-.beneficios{
-    background-color: #ffffff;
-    padding: 20px;
-    display: inline;
-    position: absolute;
-}
-
-.imagembeneficios{
-    width: 50%;
-    padding-left: 20px 0;
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0; /*mesma coisa q margin-top: 10px*/
 }
 
 footer{
@@ -98,4 +93,31 @@ footer{
     font-size: 13px;
     margin-top: 20px;
      
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form p{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+ 
+.input-padrão{
+    display: block;
+    margin-bottom: 20px;
+    /*margin: 0 0 20px; MESMA COISA QUE O DE CIMA*/
+    padding: 10px 25px; /*10px p/ sima e p/ baixo e 25px para os lados*/
+    width: 50%;/*o campo input, menos o tipo submit, vai ocupar 50% da pagina*/
+}
+
+.checkbox{
+    margin: 20px 0
 }
