@@ -104,7 +104,7 @@ form{
     margin: 40px 0;
 }
 
-form label, form p{
+form label, form legend{
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
@@ -120,4 +120,41 @@ form label, form p{
 
 .checkbox{
     margin: 20px 0
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;/*diz quanto tempo a ação do hover ou transição vai demorar e oq ela irá mudar*/
+    cursor: pointer;/*sempre que o mouse estiver por cima do elem ele mude o cursor*/
+}
+
+.enviar:hover{
+    background: darkorange;
+    /*transform: scale(1.2);aumenta as proporções do elemento em 20%(1,2)*/
+    /*transform: rotate(70deg);inclina o meu elemnto em quantos graus(degreas(deg)) eu quiser*/
+    /*No css a leitura é sempre feita de cima para baixo então o ultimo item sobreescreve o anterior*/
+    transform: scale(1.2) rotate(-3deg);
+}
+
+table{
+    margin: 20px 0 40px;
+}
+
+thead{
+    background: #555555;
+    color: #ffffff;
+}
+
+td, th{
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 15px;
 }
