@@ -4,8 +4,8 @@ header{
 }
 
 .caixa-cabecalho{
-    width: 940px;
     position: relative;
+    width: 940px;
     margin: 0 auto;
 }
 
@@ -95,11 +95,9 @@ footer{
      
 }
 
-main{
-    width: 940px;
-    margin: 0 auto;
+#banner{
+    width: 100%;
 }
-
 form{
     margin: 40px 0;
 }
@@ -157,36 +155,4 @@ td, th{
     font-weight: bold;
     font-size: 20px;
     padding: 8px 15px;
-}
-
-/*CSS da página index*/
-
-.banner{
-    width: 100%;
-}
-
-.titulo-principal{
-    font-size: 2em;
-    text-align: center;
-    margin: 0 0 1em;
-    clear: float;
-}
-
-.principal p{
-    font-size: 1.5em;
-    margin: 0 0 1em;
-}
-
-.principal strong{
-    font-weight: bold;
-}
-
-.principal em{
-    font-style: italic;
-}
-
-.utensilios{
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
 }
