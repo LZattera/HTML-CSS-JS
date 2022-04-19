@@ -173,6 +173,7 @@ td, th{
     text-align: center;
     margin: 0 0 1em;
     clear: float;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 /*.titulo-principal::first-letter{/*pega a primeira letra e cola em negrito
@@ -265,9 +266,72 @@ Ele não é um conteudo selecionavel no site, apenas de exibição*/
 
 .imagem-beneficios{
     width: 60%;
+    /*Adicionando opacidade a imagem, o opacity vai de 0%(0)-ñ exibe a 100%(1)-exibe tudo*/
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.8);
+}
+
+.imagem-beneficios:hover{
+    opacity: 0.7;
 }
 
 .video{
    width: 560px;
    margin: 2em auto; /*1em p/ cima e p/ baixo e automatica nas laterais*/
+}
+
+/*Parte para o site ficar compativel com telas de celular*/
+
+@media screen and (max-width: 400px) {/*para dispositivos que tenham até 40px de largura na tela terão um estilo personalizado*/
+    .caixa-cabecalho, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+    nav a{
+        font-size: 22px;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .imagem-beneficios{
+        margin: 17px 0 6px 0;
+    }
+
+    .mapa, .beneficios {
+        padding: 2em 0;
+    }
+
+    .titulo-principal {
+        font-size: 1.7em;
+        color: #000000;
+    }
+
+    .principal p, .utensilios{
+        font-size: 17px;
+        margin: 0 20px;
+    }
+
+    .itens{
+        margin-left: 20px;
+    }
+
+    .footer{
+        height: auto;
+    }
+    .produtos li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 30px auto;
+    }
 }
