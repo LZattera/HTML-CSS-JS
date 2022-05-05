@@ -38,6 +38,20 @@ body{
     background: var(--bg);
 }
 
+.btn{
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0.9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: 0.2rem;
+}
+
 header{
     background: var(--bg);
     display: flex;
@@ -90,6 +104,8 @@ header .formulario-procura{
     height: 5rem;
     display: flex;
     align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
 }
 
 header .formulario-procura input{
@@ -99,4 +115,111 @@ header .formulario-procura input{
     color: var(--black);
     padding: 1rem;
     text-transform: none;
+}
+
+header .formulario-procura label {
+    cursor: pointer;
+    font-size: 2.2em;
+    margin: 0 1rem;
+    color: var(--black);
+    transition: 400ms;
+}
+
+header .formulario-procura label:hover{
+    color: var(--main-color);
+}
+
+header .menu-itens-carrinho{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding: 0 1.5rem;
+}
+
+header .menu-itens-carrinho.active{}
+
+header .menu-itens-carrinho .itemcarrinho{
+    position: relative;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+header .menu-itens-carrinho .itemcarrinho .fa-times{
+    position: absolute;
+    top: 1rem; 
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+header .menu-itens-carrinho .itemcarrinho .fa-times:hover{
+    color: var(--main-color);
+}
+
+header .menu-itens-carrinho .itemcarrinho img{
+    height: 7rem;
+}
+
+header .menu-itens-carrinho .itemcarrinho .conteudo h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+
+}
+
+header .menu-itens-carrinho .itemcarrinho .conteudo .preco{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+header .menu-itens-carrinho .btn{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/*media queries*/
+@media(max-width:991px){
+    html{
+        font-size: 55%;        
+    }
+    .header{
+        padding: 1.5rem 2rem;
+
+    }
+}
+@media(max-width:991px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: #fff;
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+    }
+
+    .header .navbar.active{
+        right: 0;
+    }
+
+    .header .navbar a{
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+        
+    }
 }

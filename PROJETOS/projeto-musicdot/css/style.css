@@ -1,0 +1,13 @@
+/*Este arquivo equivale ao arquivo SOBRE.CSS do livro*/
+body{
+    font-family: "Helvetica",	"Lucida	Grande",	sans-serif;
+}
+
+.titulo-principal{
+    color: #3D3D3D;
+    background-color: #e1edf2;
+}
+
+.subtitulo{
+    border-bottom: 2px solid #000000;
+}
