@@ -9,5 +9,11 @@ body{
 }
 
 .subtitulo{
-    border-bottom: 2px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.imagem{
+    text-align: center;
+    background-color: whitesmoke;
+   border: 1px solid lightgrey;
 }
