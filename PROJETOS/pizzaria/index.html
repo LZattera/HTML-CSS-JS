@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria | Projeto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><h1>Comunidade</h1></li>
+            <li><h2>Pizzaria</h2></li>
+        </ul>
+    </header>
+
+    <section>
+        <form>
+            <h3>Qual pizza foi vendida?</h3>
+            <ul>
+                <li><input type="radio" name="pizzas"  id="Mussarela"><label for="Mussarela">Mussarela</label></li>
+                <li><input type="radio" name="pizzas" id="Portuguesa"><label for="Portuguesa">Portuguesa</label></li>
+                <li><input type="radio" name="pizzas" id="QuatroQueijos"><label for="QuatroQueijos">Quatro Queijos</label></li>
+            </ul>
+        </form>
+    </section>
+
+    <section>
+        <button id="vendas">Vendas</button><button id="estorno">Estorno</button>
+    </section>
+
+    <section id="table">
+        <table>
+            <tr>
+                <th>Sabores</th>
+                <th>Quantidade</th>
+                <th>Valores</th>
+            </tr>
+            <tr>
+                <td>Mussarela</td><td id="resultadoMussarela"></td><td id="vendaMussarela"></td>
+            </tr>
+            <tr>
+                <td>Portuguesa</td><td id="resultadoPortuguesa"></td><td id="vendaPortuguesa"></td>
+            </tr>
+            <tr>
+                <td>Quatro Queijos</td><td id="resultadoQuatroQueijos"></td><td id="vendaQuatroQueijos"></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <button id="export">Planilha</button>
+    </section>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/tableToExcel.js"></script>
+
+</body>
+</html>
